@@ -12,32 +12,25 @@
     "electron-packager": "^14.2.1"
   },
   "build": {
-    "appId": "NewsMacroBox",
-    "dmg": {
-      "contents": [
-        {
-          "x": 110,
-          "y": 150
-        },
-        {
-          "x": 240,
-          "y": 150,
-          "type": "link",
-          "path": "/Applications"
-        }
-      ]
-    },
-    "linux": {
-      "target": [
-        "AppImage",
-        "deb"
-      ]
-    },
-    "win": {
-      "target": "squirrel",
-      "icon": "assets/news.ico"
-    }
+  "appId": "NewsMacroBox",
+  "mac": {
+    "target": [
+      "dmg",
+      "mas",
+      "zip"
+    ],
+    "category": "public.app-category.finance"
   },
+  "linux": {
+    "category": "Utility"
+  },
+  "dmg": {
+    "icon": false
+  }"win": {
+    "target": "squirrel",
+    "icon": "assets/news.ico"
+  }
+},
   "dependencies": {
     "bootstrap": "^4.5.0",
     "lightweight-charts": "^2.0.0",
