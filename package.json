@@ -1,42 +1,43 @@
 {
-  "name": "NewsTickerBox",
-  "version": "0.1.0",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "devDependencies": {
-    "electron": "^8.3.0",
-    "electron-builder": "^22.7.0",
-    "electron-installer-dmg": "^3.0.0",
-    "electron-packager": "^14.2.1"
-  },
-  "build": {
-  "appId": "NewsMacroBox",
-  "mac": {
-    "target": [
-      "dmg",
-      "mas",
-      "zip"
-    ],
-    "category": "public.app-category.finance"
-  },
-  "linux": {
-    "category": "Utility"
-  },
-  "dmg": {
-    "icon": false
-  }"win": {
-    "target": "squirrel",
-    "icon": "assets/news.ico"
-  }
-},
-  "dependencies": {
-    "bootstrap": "^4.5.0",
-    "lightweight-charts": "^2.0.0",
-    "mongodb": "^3.5.8",
-    "request": "^2.88.2",
-    "rss-parser": "^3.8.0",
-    "websocket": "^1.0.31"
-  }
+	"name": "NewsTickerBox",
+	"version": "0.1.0",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"devDependencies": {
+		"electron": "^8.3.0",
+		"electron-builder": "^22.7.0",
+		"electron-installer-dmg": "^3.0.0",
+		"electron-packager": "^14.2.1"
+	},
+	"build": {
+		"appId": "NewsMacroBox",
+		"mac": {
+			"target": [
+				"dmg",
+				"mas",
+				"zip"
+			],
+			"category": "public.app-category.finance"
+		},
+		"linux": {
+			"category": "Utility"
+		},
+		"dmg": {
+			"icon": false
+		},
+		"win": {
+			"target": "squirrel",
+			"icon": "assets/news.ico"
+		}
+	},
+	"dependencies": {
+		"bootstrap": "^4.5.0",
+		"lightweight-charts": "^2.0.0",
+		"mongodb": "^3.5.8",
+		"request": "^2.88.2",
+		"rss-parser": "^3.8.0",
+		"websocket": "^1.0.31"
+	}
 }
