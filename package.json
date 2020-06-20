@@ -13,7 +13,6 @@
   },
   "build": {
     "appId": "NewsMacroBox",
-    "category": "Finance",
     "dmg": {
       "contents": [
         {
